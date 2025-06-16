@@ -104,6 +104,19 @@ print()
 print(", ".join(str(num) for num in range(1, 3001) if num % 77 == 0))
 
 # -------------------------------------------------------
+size=25
+symbol='*'
+for i in range(size):
+    print(symbol * size)
+# -----------------------------------------------
+
+while True:
+    result = random.randint(0, 1)
+    if result == 0:
+        print("H")
+        break
+    else:
+        print("S")
 
 
 
