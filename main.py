@@ -169,5 +169,112 @@ else:
     print("Žaidimą laimėjo: Kazys!")
 # -----------------------------------------------------
 
+total_hits = 0
 
+for i in range(5):
+    length = 0
+    hits = 0
 
+    while length < 85:
+        length += random.randint(5, 20)
+        hits += 1
+
+    print(f"Vinis {i+1} įkalta per {hits} smūgius.")
+    total_hits += hits
+
+print(f"Viso smūgių: {total_hits}")
+
+# --------------------------------------------------------
+
+total_hits = 0
+
+for i in range(5):
+    length = 0
+    hits = 0
+
+    while length < 85:
+        length += random.randint(20, 30)
+        hits += 1
+
+    if random.randint(0, 1) == 1:
+        length += random.randint(20, 30)
+        print(f"  Smūgis {hits}: pataikė, įkala {length} mm")
+    else:
+        print(f"  Smūgis {hits}: nepataikė")
+        print(f"{i + 1}-oji vinis įkalta per {hits} smūgius")
+        total_hits += hits
+
+    print(f"\nViso smūgių: {total_hits}")
+
+# ------------------------------------------------
+
+numbers = random.sample(range(1, 201), 50)
+result = " ".join(str(num) for num in numbers)
+print(result)
+
+# -------------------------------------------
+random_array = [random.randint(5, 25) for _ in range(30)]
+print(random_array)
+# --------------------------------------------------------
+
+array = [random.randint(5, 25) for _ in range(30)]
+count_greater_than_10 = sum(1 for value in array if value > 10)
+print("Array:", array)
+print("Count of values greater than 10:", count_greater_than_10)
+
+# -----------------------------------------------------------
+random_array = [random.randint(5, 25) for _ in range(30)]
+numb= max(random_array)
+print(random_array)
+print(numb)
+# ----------------------------------------------------------
+random_array = sum([random.randint(5, 25) for _ in range(30)])
+print(random_array)
+# ------------------------------------------------------
+random_array =[random.randint(5, 25) for _ in range(30)]
+new_array = [value - index for index, value in enumerate(random_array)]
+print(random_array)
+print(new_array)
+
+# -------------------------------------------------
+
+random_array =[random.randint(5, 25) for _ in range(30)]
+random_array.extend([random.randint(5, 25) for _ in range(10)])
+print(random_array)
+
+# ------------------------------------------------------------
+num=0
+random_array =[random.randint(5, 25) for _ in range(30)]
+
+even_array = [random_array[i] for i in range(0, 30, 2)]
+odd_array  = [random_array[i] for i in range(1, 30, 2)]
+print(even_array)
+print(odd_array)
+
+# --------------------------------------------------------------
+random_array =[random.randint(5, 25) for _ in range(30)]
+for i in range(0, len(array), 2):
+    if array[i] > 15:
+        array[i] = 0
+        print(array)
+# ---------------------------------------------------
+
+array =[random.randint(5, 25) for _ in range(30)]
+for i in range(len(array)):
+    if array[i] > 10:
+        print(f"\nFirst index with value > 10: {i} (value = {array[i]})")
+        break
+# ------------------------------------------------------
+
+random_array = [random.choice(['A', 'B', 'C', 'D']) for _ in range(200)]
+print(random_array)
+A_sk = raidės.count('A')
+B_sk = raidės.count('B')
+C_sk = raidės.count('C')
+D_sk = raidės.count('D')
+
+print("Raidžių kiekiai:")
+print("A =", A_sk)
+print("B =", B_sk)
+print("C =", C_sk)
+print("D =", D_sk)
