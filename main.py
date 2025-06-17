@@ -266,15 +266,29 @@ for i in range(len(array)):
         break
 # ------------------------------------------------------
 
-random_array = [random.choice(['A', 'B', 'C', 'D']) for _ in range(200)]
+letters= [random.choice(['A', 'B', 'C', 'D']) for _ in range(200)]
 print(random_array)
-A_sk = raidės.count('A')
-B_sk = raidės.count('B')
-C_sk = raidės.count('C')
-D_sk = raidės.count('D')
+A_sk = letters.count('A')
+B_sk = letters.count('B')
+C_sk = letters.count('C')
+D_sk = letters.count('D')
 
-print("Raidžių kiekiai:")
+print("letters.count:")
 print("A =", A_sk)
 print("B =", B_sk)
 print("C =", C_sk)
 print("D =", D_sk)
+
+letters.sort()
+
+#----------------------------------------------------
+def generate_array():
+    return [random.choice(['A', 'B', 'C', 'D']) for _ in range(200)]
+
+array1 = generate_array()
+array2 = generate_array()
+array3 = generate_array()
+
+combined = [array1[i] + array2[i] + array3[i] for i in range(200)]
+
+
