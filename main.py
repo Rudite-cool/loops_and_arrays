@@ -118,8 +118,56 @@ while True:
     else:
         print("S")
 
+# ------------------------------------------------------
+emblem=0
+while emblem < 3:
+    throw = random.randint(0, 1)
+    if throw == 0:
+        print("H")  # Herbas
+        emblem += 1
+    else:
+        print("S")
+# ----------------------------------------------
+
+emblem_in_row = 0
+
+while emblem_in_row < 3:
+    throw = random.randint(0, 1)
+    if throw == 0:
+        print("H")
+        emblem_in_row += 1
+    else:
+        print("S")
+        emblem_in_row = 0
+# -------------------------------------------
 
 
+petras_points = 0
+kazys_points = 0
+
+while petras_points < 222 and kazys_points < 222:
+    petras = random.randint(10, 20)
+    kazys = random.randint(5, 25)
+
+    petras_points += petras
+    kazys_points += kazys
+
+    print(f"Petras: {petras_points} taškai, Kazys: {kazys_points} taškai.")
+
+    if petras > kazys:
+        print("Partiją laimėjo: Petras\n")
+    elif kazys > petras:
+        print("Partiją laimėjo: Kazys\n")
+    else:
+        print("Partija baigėsi lygiosiomis\n")
+
+if petras_points >= 222 and kazys_points >= 222:
+    print("Abu pasiekė 222 taškus – lygiosios!")
+elif petras_points >= 222:
+    print("Žaidimą laimėjo: Petras!")
+else:
+    print("Žaidimą laimėjo: Kazys!")
+# -----------------------------------------------------
 
 
 
