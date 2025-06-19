@@ -485,11 +485,12 @@ print(add_func(data, False))
 # Čia tikriname, ar num dalijasi iš i be liekanos.
 
 def numb_prime(number):
-    for item in number:
-        if number < 1:
+        if number < 2:
             return False
-        for i in range(2, num):
-            if num % i == 0:
+        for i in range(2, number):
+            if number % i == 0:
                 return False
         return True
+print(numb_prime(5))
+print(numb_prime(4))
 
