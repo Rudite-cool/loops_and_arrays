@@ -290,5 +290,23 @@ array2 = generate_array()
 array3 = generate_array()
 
 combined = [array1[i] + array2[i] + array3[i] for i in range(200)]
+# -------------------------------------------------------
+def say_hi_to(name):
+    print("hi", name)
+say_hi_to("Jonas")
+say_hi_to("Petras")
+
+def sim_pi():
+    return 3.14
+print(sim_pi())
+sp = sim_pi()
+print(sp)
+# ------------------------------------
+
+def summ(a, b,):
+    return a+b
+result=summ(2,6)
+print(result)
+# -------------------------------------------
 
 
