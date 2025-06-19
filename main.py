@@ -308,6 +308,47 @@ def summ(a, b,):
 result=summ(2,6)
 print(result)
 # -------------------------------------------
-def
+def PISq():
+    return 9.8596
+result=PISq()
+print(result)
 
+# ----------------------------------------------
+
+def multiply (a,b):
+    return a*b
+result=multiply(3,5)
+print(result)
+
+# ---------------------------------------------
+
+def print_list (A,B,C,D):
+    for letters in [A,B,C,D]:
+        print(letters, end=' ')
+    print()
+    print(A,B,C,D)
+print_list("A","B","C","D")
+
+# ----------------------------------------------------
+def generate_random(min_value, max_value):
+    return random.randint(min_value, max_value)
+result = generate_random(2, 20)
+print(result)
+
+# ------------------------------------------------
+def generate_random_array(length, min_value, max_value):
+    return [random.randint(min_value, max_value) for _ in range(length)]
+print(generate_random_array(5, 1, 10))
+
+
+# ------------------------------------------------------
+
+def generate_and_sum(min_value, max_value, length):
+    array = [random.randint(min_value, max_value) for _ in range(length)]
+    total = sum(array)
+    print(array)
+    return total
+suma = generate_and_sum(1, 10, 5)
+print(suma)
+# ---------------------------------------------------------
 
