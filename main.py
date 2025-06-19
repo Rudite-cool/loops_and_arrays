@@ -351,4 +351,40 @@ def generate_and_sum(min_value, max_value, length):
 suma = generate_and_sum(1, 10, 5)
 print(suma)
 # ---------------------------------------------------------
+def generate_and_avg(min_value, max_value, length):
+    array = [random.randint(min_value, max_value)for _ in range(length)]
+    return array
+def average_of_array(array):
+    if len(array) == 0:
+        return 0
+    return sum(array) / len(array)
+# -------------------------------------------------------
 
+def rectangle(rows, columns):
+    for i in range(rows):
+        for j in range(columns):
+            print("*", end="")
+        print()
+rectangle(3, 5)
+# ---------------------------------------------------
+
+def count_letters_and_gaps(sentence):
+    letters=0
+    gaps=0
+    for char in sentence:
+        if char == " ":
+            gaps += 1
+        else:
+            letters += 1
+    print("letters:", letters)
+    print("gaps:", gaps)
+count_letters_and_gaps("Šiandien labai graži diena")
+#  here I say go through each symbol(char), if you find gap, count plus one gap, as for others you plus 1 letter
+# ---------------------------------------------------
+def reverse_sentence(sentence):
+    return sentence[::-1]
+result= reverse_sentence ("Naglis")
+print(result)
+
+# double :: means to take the whole sentence and -1 means read from the back
+# -------------------------------------------------
