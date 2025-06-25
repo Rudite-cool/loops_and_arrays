@@ -543,15 +543,23 @@ print(words("car puppy"))
 
 # ----------------------------------------------------
 
-
+# empty
 author1 = Author()
 author1.name = "George"
 author1.surname = "Orwell"
 author1.birth_year = 1903
 
 author2= Author()
-author2 = Author("Fyodor", "Dostoevsky", 1821)
-author3 = Author("Agatha", "Christie", 1890)
+author2.name="Fyodor"
+author2.surname="Dostoevsky"
+author2.birth_year=1821
+
+author3 = Author()
+author3.name="Agatha"
+author3.surname="Christie"
+author3.birth_year=1890
+
+# not empty
 
 b1 = Author("J.K.", "Rowling", 1965)
 b2 = Author("Leo", "Tolstoy", 1828)
