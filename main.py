@@ -1,5 +1,6 @@
 import random
 
+from library.Author import Author
 from library.Plant import Plant
 
 for i in range(10):
@@ -543,11 +544,12 @@ print(words("car puppy"))
 # ----------------------------------------------------
 
 
-class Author:
-    pass
+author1 = Author()
+author1.name = "George"
+author1.surname = "Orwell"
+author1.birth_year = 1903
 
-
-author1 = Author("George", "Orwell", 1903)
+author2= Author()
 author2 = Author("Fyodor", "Dostoevsky", 1821)
 author3 = Author("Agatha", "Christie", 1890)
 
@@ -565,3 +567,6 @@ p2=Plant("tomato","Solanum lycopersicum",True, "Europe", 1.5,True)
 p3=Plant("Broccoli", "Brassica oleracea ", True, "Europe", 0.8, True)
 p4=Plant("Holly","Aquifolium",False, "Europe", 2, False)
 
+plants=[p1, p2, p3, p4]
+for plant in plants:
+    print(plant)

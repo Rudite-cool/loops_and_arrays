@@ -1,4 +1,4 @@
-class Plant():
+class Plant:
     def __init__(self, name, latin_name, one_year, continent, height, eatable):
         self.name = name
         self.latin_name = latin_name
@@ -8,11 +8,11 @@ class Plant():
         self.eatable = eatable
 
     def __str__(self):
-            one_year_text = "Yes" if one_year else "No"
-            eatable_text = "Yes" if self.eatable else "No"
-            return (f"{self.name} ({self.latin_name}), "
-                    f"one_year: {self.one_year_text}, "
-                    f"continent: {self.continent}, "
-                    f"height: {self.height} m, "
-                    f"eatable: {eatable_text}")
+        one_year_text = "Yes" if self.one_year else "No"
+        eatable_text = "Yes" if self.eatable else "No"
+        return (f"{self.name} ({self.latin_name}), "
+                f"one_year: {one_year_text}, "
+                f"continent: {self.continent}, "
+                f"height: {self.height} m, "
+                f"eatable: {eatable_text}")
 
