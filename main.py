@@ -1,5 +1,7 @@
 import random
 
+from library.Plant import Plant
+
 for i in range(10):
     print("labas")
 # -------------------------------------
@@ -557,4 +559,9 @@ for author in authors:
     print(author)
 
 # -------------------------------------------
+
+p1=Plant("Agurkas", "Cucumis sativus", True, "Europa", 0.5, True)
+p2=Plant("tomato","Solanum lycopersicum",True, "Europe", 1.5,True)
+p3=Plant("Broccoli", "Brassica oleracea ", True, "Europe", 0.8, True)
+p4=Plant("Holly","Aquifolium",False, "Europe", 2, False)
 

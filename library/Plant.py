@@ -1,8 +1,18 @@
 class Plant():
-    def __init__(self, name, latin_name, one_year, continent, aukstis, valgomas):
-        self.pavadinimas = pavadinimas
-        self.lotyniskas_pavadinimas = lotyniskas_pavadinimas
-        self.vienmetis = vienmetis
-        self.zemynas = zemynas
-        self.aukstis = aukstis
-        self.valgomas = valgomas
+    def __init__(self, name, latin_name, one_year, continent, height, eatable):
+        self.name = name
+        self.latin_name = latin_name
+        self.one_year = one_year
+        self.continent = continent
+        self.height = height
+        self.eatable = eatable
+
+    def __str__(self):
+            one_year_text = "Yes" if one_year else "No"
+            eatable_text = "Yes" if self.eatable else "No"
+            return (f"{self.name} ({self.latin_name}), "
+                    f"one_year: {self.one_year_text}, "
+                    f"continent: {self.continent}, "
+                    f"height: {self.height} m, "
+                    f"eatable: {eatable_text}")
+
