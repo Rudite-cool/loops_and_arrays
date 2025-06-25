@@ -538,7 +538,23 @@ def words(text):
     return max(words, key=len)
 print(words("car puppy"))
 
-# ---------------------------------------------------------
+# ----------------------------------------------------
 
 
+class Author:
+    pass
+
+
+author1 = Author("George", "Orwell", 1903)
+author2 = Author("Fyodor", "Dostoevsky", 1821)
+author3 = Author("Agatha", "Christie", 1890)
+
+b1 = Author("J.K.", "Rowling", 1965)
+b2 = Author("Leo", "Tolstoy", 1828)
+b3 = Author("Mark", "Twain", 1835)
+authors = [author1, author2, author3, b1, b2, b3]
+for author in authors:
+    print(author)
+
+# -------------------------------------------
 
