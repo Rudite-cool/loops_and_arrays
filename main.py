@@ -494,3 +494,51 @@ def numb_prime(number):
 print(numb_prime(5))
 print(numb_prime(4))
 
+# -----------------------------------------------
+# Sukurkite funkciją kuri priima du argumentus. Gražina
+# pirmąjį skaičių pakeltą laipsniu tokiu kaip antras skaičius.
+
+def raise_numb(number, raising):
+    return number ** raising
+
+result = raise_numb(3, 3)
+print(result)
+
+# -------------------------------------------------------------
+# Sukurkite funkciją kuri priima skaičių masyvą ir gražina
+# tik nepasikartojančius elementus
+
+def unique(list):
+    return [x for x in list if list.count(x) == 1]
+print (unique)
+list=[1,2,2,3]
+result=unique(list)
+print(result)
+
+# --------------------------------------------------
+# Sukurkite funkciją kuri priima tekstą ir atspausdina
+# tekste daugiausiai pasikartojantį simbolį.
+
+def let (text):
+    count_letter={}
+    for letter in text:
+        if letter in count_letter:
+            count_letter[letter] += 1
+        else:
+            count_letter[letter] = 1
+    return count_letter
+print(let("apple"))
+
+# -------------------------------------------------
+# Sukurkite funkciją kuri priima tekstą ir atspausdina jame
+# esantį ilgiausią žodi
+
+def words(text):
+    words=text.split()
+    return max(words, key=len)
+print(words("car puppy"))
+
+# ---------------------------------------------------------
+
+
+
