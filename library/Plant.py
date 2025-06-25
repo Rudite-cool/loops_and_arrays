@@ -1,5 +1,5 @@
-class Plant:
-    def __init__(self, name, latin_name, one_year, continent, height, eatable):
+class Plant():
+    def __init__(self, name="", latin_name="", one_year=False, continent="", height=0.0, eatable=False):
         self.name = name
         self.latin_name = latin_name
         self.one_year = one_year

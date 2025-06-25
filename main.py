@@ -570,11 +570,27 @@ for author in authors:
 
 # -------------------------------------------
 
-p1=Plant("Agurkas", "Cucumis sativus", True, "Europa", 0.5, True)
-p2=Plant("tomato","Solanum lycopersicum",True, "Europe", 1.5,True)
+plant1= Plant()
+plant1.name="Agurkas"
+plant1.latin_name="Cucumis sativus"
+plant1.one_year = True
+plant1.continent="Europe"
+plant1.height = 0.5
+plant1.eatable = True,False
+
+plant2= Plant()
+plant2.name="tomato"
+plant2.latin_name="Solanum lycopersicum"
+plant1.one_year= True
+plant2.continent="Europe"
+plant2.height = 1.5
+plant2.eatable = True
+
+
+
 p3=Plant("Broccoli", "Brassica oleracea ", True, "Europe", 0.8, True)
 p4=Plant("Holly","Aquifolium",False, "Europe", 2, False)
 
-plants=[p1, p2, p3, p4]
+plants=[plant1, plant2, p3, p4]
 for plant in plants:
     print(plant)
